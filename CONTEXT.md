@@ -24,7 +24,7 @@ This file routes agent tasks to the correct stage. Read `CLAUDE.md` first for wo
 
 | req-NNN | Current Stage | GitHub Issue | Notes |
 |---------|---------------|--------------|-------|
-| req-001 | 01_Requirements | [#1](https://github.com/igobyjama/mini-erp/issues/1) | Project Foundation: monorepo, DB, auth |
+| req-001 | 03_Testing | [#1](https://github.com/igobyjama/mini-erp/issues/1) | Project Foundation: monorepo, DB, auth |
 | req-002 | 01_Requirements | [#2](https://github.com/igobyjama/mini-erp/issues/2) | Contacts module: clients and vendors |
 | req-003 | 01_Requirements | [#3](https://github.com/igobyjama/mini-erp/issues/3) | Finance module: invoices and expenses |
 | req-004 | 01_Requirements | [#4](https://github.com/igobyjama/mini-erp/issues/4) | Projects and tasks module |
