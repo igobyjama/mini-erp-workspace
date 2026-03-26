@@ -1,0 +1,75 @@
+# =============================================================================
+# AI Coding Pipeline Blueprint — .gitignore
+# =============================================================================
+# Pipeline markdown files and req-NNN/ folders are intentionally tracked.
+# They form the audit trail for every requirement through the pipeline.
+#
+# The project source code lives in repository/.
+# Add a repository/.gitignore for language/framework-specific ignores.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Secrets & Environment — NEVER commit these
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.cert
+*.crt
+secrets/
+credentials/
+*credentials*.json
+*secret*.json
+*serviceaccount*.json
+
+# -----------------------------------------------------------------------------
+# Operating System
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------------------------------------
+# Editors & IDEs
+# -----------------------------------------------------------------------------
+# VSCode — keep extensions.json (shared tooling), ignore personal settings
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# -----------------------------------------------------------------------------
+# Logs & Temporary Files
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+
+# -----------------------------------------------------------------------------
+# Project source code (repository/)
+# -----------------------------------------------------------------------------
+# The repository/ folder is tracked. Add language/framework-specific rules in
+# repository/.gitignore — for example:
+#
+#   node_modules/
+#   dist/
+#   build/
+#   .env
+#
+# Do not add broad repository/ ignores here — let the nested .gitignore handle it.
